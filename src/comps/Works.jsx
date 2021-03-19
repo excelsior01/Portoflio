@@ -91,7 +91,7 @@ const Works = () => {
                     >
                       Link
                     </a>
-                    <a href=''>Code</a>
+                    <a href='https://github.com/excelsior01/Amazon-clone'>Code</a>
                   </div>
                 </div>
               </div>
@@ -120,7 +120,7 @@ const Works = () => {
                     >
                       Link
                     </a>
-                    <a href=''>Code</a>
+                    <a href='https://github.com/excelsior01/Port-v2'>Code</a>
                   </div>
                 </div>
               </div>
@@ -140,7 +140,7 @@ const Works = () => {
                   <div className='text-white'>
                     <p className='work-title'>Portfolio Template 1</p>
                     <p className='work-desc'>
-                      Responsive page with custom cursor
+                      Responsive page with custom cursorm, EmailJS for form
                     </p>
                     <p className='work-tech'> React, Gsap, Scss,React-Media</p>
                     <a
@@ -149,7 +149,7 @@ const Works = () => {
                     >
                       Link
                     </a>
-                    <a href=''>Code</a>
+                    <a href='https://github.com/excelsior01/Portfolio-template1'>Code</a>
                   </div>
                 </div>
               </div>
@@ -174,7 +174,7 @@ const Works = () => {
                     <a style={{ margin: "10px" }} href='https://gracious-edison-e54e4f.netlify.app/'>
                       Link
                     </a>
-                    <a href=''>Code</a>
+                    <a href='https://github.com/excelsior01/Pomodoro-Clock'>Code</a>
                   </div>
                 </div>
               </div>
@@ -202,7 +202,7 @@ const Works = () => {
                     >
                       Link
                     </a>
-                    <a href=''>Code</a>
+                    <a href='https://github.com/excelsior01/Showcase'>Code</a>
                   </div>
                 </div>
               </div>

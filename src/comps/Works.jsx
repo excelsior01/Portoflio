@@ -5,45 +5,37 @@ import marketark from "./styles/assets/Marketark2-min.jpg";
 import pomo from "./styles/assets/pomo-min.jpg";
 import port2 from "./styles/assets/port2-min.jpg";
 import sensi from "./styles/assets/sensi-min.jpg";
-import world from "./styles/assets/world-min.jpg"
-
-
+import world from "./styles/assets/world-min.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Works = () => {
-
-
-let star = useRef(null)
+  let star = useRef(null);
 
   useEffect(() => {
     gsap.from("#card", {
       duration: 1,
-       
+
       y: 100,
       stagger: 0.5,
     });
-
 
     gsap.from("#card", {
       scrollTrigger: {
         trigger: "#portfolio",
         start: "top 20%",
         end: "top 80%",
-
-         
       },
-  
-      opacity:0,
+
+      opacity: 0,
       y: 100,
       stagger: 0.5,
-      delay:.3,
+      delay: 0.3,
     });
 
     gsap.from(".port-tit", {
       scrollTrigger: {
         trigger: "#portfolio",
-      
       },
       delay: 1,
       opacity: 0,
@@ -55,7 +47,7 @@ let star = useRef(null)
       scrollTrigger: {
         trigger: "#portfolio",
       },
-      
+
       opacity: 0,
       rotate: 90,
       ease: "bounce.out",
@@ -86,28 +78,25 @@ let star = useRef(null)
             >
               <div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
                 <div className='portfolio-item-caption-content text-center  '>
-                  <a
-                    className='work-link-container text-white text-decoration-none '
-                    href='https://marketark2.web.app/'
-                  >
-                
+                  <div className='text-white'>
                     <p className='work-title'>MarketArk</p>
                     <p className='work-desc'>
                       Amazon clone with Firebase auth and Stripe payment
                       implementation
                     </p>
                     <p className='work-tech'> React, NodeJS, Scss</p>
-                    <a href="">code</a>
-                  </a>
+                    <a
+                      style={{ margin: "10px" }}
+                      href='https://marketark2.web.app/'
+                    >
+                      Link
+                    </a>
+                    <a href=''>Code</a>
+                  </div>
                 </div>
               </div>
-              <a href='https://marketark2.web.app/'>
-                <img
-                  className='img-fluid workCard'
-                  src={marketark}
-                  alt=''
-                />
-              </a>
+
+              <img className='img-fluid workCard' src={marketark} alt='' />
             </div>
           </div>
 
@@ -119,26 +108,24 @@ let star = useRef(null)
             >
               <div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
                 <div className='portfolio-item-caption-content text-center '>
-                  <a
-                    className='work-link-container text-white text-decoration-none '
-                    href='https://city-menu.netlify.app/'
-                  >
-                
+                  <div className='text-white'>
                     <p className='work-title'>Portfolio Template 2</p>
                     <p className='work-desc'>
                       Single page app with cool navbar animations
                     </p>
                     <p className='work-tech'> React, Gsap, Scss</p>
-                    <a href="">code</a>
-                  </a>
+                    <a
+                      style={{ margin: "10px" }}
+                      href='https://city-menu.netlify.app/'
+                    >
+                      Link
+                    </a>
+                    <a href=''>Code</a>
+                  </div>
                 </div>
               </div>
 
-              <img
-                className='img-fluid workCard'
-                src={sensi}
-                alt=''
-              />
+              <img className='img-fluid workCard' src={sensi} alt='' />
             </div>
           </div>
 
@@ -150,25 +137,23 @@ let star = useRef(null)
             >
               <div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
                 <div className='portfolio-item-caption-content text-center text-danger'>
-                  <a
-                    className='work-link-container text-white text-decoration-none '
-                    href='https://shigo-portfolio-template.netlify.app/'
-                  >
-                
+                  <div className='text-white'>
                     <p className='work-title'>Portfolio Template 1</p>
                     <p className='work-desc'>
                       Responsive page with custom cursor
                     </p>
                     <p className='work-tech'> React, Gsap, Scss,React-Media</p>
-                    <a href="">code</a>
-                  </a>
+                    <a
+                      style={{ margin: "10px" }}
+                      href='https://shigo-portfolio-template.netlify.app/'
+                    >
+                      Link
+                    </a>
+                    <a href=''>Code</a>
+                  </div>
                 </div>
               </div>
-              <img
-                className='img-fluid  workCard'
-                src={port2}
-                alt=''
-              />
+              <img className='img-fluid  workCard' src={port2} alt='' />
             </div>
           </div>
 
@@ -180,25 +165,20 @@ let star = useRef(null)
             >
               <div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
                 <div className='portfolio-item-caption-content text-center '>
-                  <a
-                    className='work-link-container text-white text-decoration-none '
-                    href='https://gracious-edison-e54e4f.netlify.app/'
-                  >
-                
+                  <div className='text-white'>
                     <p className='work-title'>Pomodoro Clock</p>
                     <p className='work-desc'>
                       Pomodoro clock with audio alarm and neomorph design
                     </p>
                     <p className='work-tech'> React, Scss </p>
-                    <a href="">code</a>
-                  </a>
+                    <a style={{ margin: "10px" }} href='https://gracious-edison-e54e4f.netlify.app/'>
+                      Link
+                    </a>
+                    <a href=''>Code</a>
+                  </div>
                 </div>
               </div>
-              <img
-                className='img-fluid workCard'
-                src={pomo}
-                alt=''
-              />
+              <img className='img-fluid workCard' src={pomo} alt='' />
             </div>
           </div>
 
@@ -210,29 +190,25 @@ let star = useRef(null)
             >
               <div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
                 <div className='portfolio-item-caption-content text-center '>
-                  <a
-                    className='work-link-container text-white text-decoration-none '
-                    href='https://showcase-template-1.netlify.app/'
-                  >
-                
+                  <div className='text-white'>
                     <p className='work-title'>The Road</p>
                     <p className='work-desc'>
                       Showcase website front page with responsive design
                     </p>
                     <p className='work-tech'> html, javascript, css </p>
-                    <a href="">code</a>
-                  </a>
+                    <a
+                      style={{ margin: "10px" }}
+                      href='https://showcase-template-1.netlify.app/'
+                    >
+                      Link
+                    </a>
+                    <a href=''>Code</a>
+                  </div>
                 </div>
               </div>
-              <img
-                className='img-fluid workCard'
-                src={world}
-                alt=''
-              />
+              <img className='img-fluid workCard' src={world} alt='' />
             </div>
           </div>
-
-          
         </div>
       </div>
     </section>

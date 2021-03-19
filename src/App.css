@@ -293,6 +293,11 @@ header {
   background: #000;
   min-height: calc(100vh + 100px);
 }
+ 
+ 
+.workCard{
+  height: 200px;
+} 
 
 .work-link-container {
   display: flex;
@@ -301,6 +306,8 @@ header {
   align-items: center;
   text-decoration: none;
   color: white;
+ 
+  padding: auto;
 }
 
 .work-title {

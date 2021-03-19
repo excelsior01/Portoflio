@@ -103,7 +103,7 @@ const About = () => {
         <div className='text-center mt-5'>
           <a
             className='btn btn-xl btn-outline-light'
-            href='https://www.linkedin.com/in/mourade-a-177a0b113/'
+            href='https://drive.google.com/file/d/1TBYIvqzD6NeGeQCh-rs5tljYT6kspNyD/view?usp=sharing'
           >
             <i className='fas fa-download mr-2'></i>
             Resume

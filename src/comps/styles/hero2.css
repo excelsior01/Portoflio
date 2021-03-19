@@ -1,0 +1,35 @@
+
+.container3 {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    text-align: justify;
+    background: white;
+    color: lightpink;
+    font-size: 20em;
+    line-height: 0.9em;
+    font-weight: 800;
+    background: #333;
+    top: -3rem;
+    
+  }
+  
+  .container3 >  svg {
+    pointer-events: none;
+    position: relative;
+    top: 300px;
+    left: 50%;
+    width: 50vw;
+    max-width: 600px;
+    transform-origin: 0% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+ 
+  }
+ 
+
+
+  

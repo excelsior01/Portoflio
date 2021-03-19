@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { lazy, Suspense } from "react";
+import "./App.css";
+ 
+
+import Media from "react-media";
+import Cursor from "./comps/Cursor";
+const Nav = lazy(() => import("./comps/Nav"));
+const Hero = lazy(() => import("./comps/Hero"));
+const About = lazy(() => import("./comps/About"));
+const Works = lazy(() => import("./comps/Works"));
+const Contact = lazy(() => import("./comps/Contact"));
+const Footer = lazy(() => import("./comps/Footer"));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Media queries={{ small: { maxWidth: 768 } }}>
+        {(matches) => (matches.small ? null : <Cursor />)}
+      </Media>
+
+      <Suspense fallback={<div className='loading'>loading...</div>}>
+         
+          <Nav />
+          <Hero />
+          <About />
+          <Works />
+          <Contact />
+          <Footer />
+        
+      </Suspense>
     </div>
   );
 }
